@@ -5,12 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Project</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Welcome to Harry Project</h1>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
+        <nav>
+            <h1>Harry Project</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
     </header>
-    <script src="script.js"></script>
+
+    <section class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text">
+            <h2 class="fade-in">Welcome to <span>Harry Project</span></h2>
+            <p class="fade-in">Quality & Innovation Together</p>
+            <a href="#pricing" class="btn glow-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Harry Project is designed to bring the best experience with modern technology.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <div class="feature-container">
+            <div class="feature-card">🚀 Fast Performance</div>
+            <div class="feature-card">⚡ Smooth Animations</div>
+            <div class="feature-card">🔒 Secure & Reliable</div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <p>$10/month</p>
+                <a href="#" class="btn">Choose</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Pro</h3>
+                <p>$20/month</p>
+                <a href="#" class="btn">Choose</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p>$30/month</p>
+                <a href="#" class="btn">Choose</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Harry Project. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
